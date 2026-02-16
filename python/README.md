@@ -44,7 +44,10 @@ from apiverve_populationdata.apiClient import PopulationAPIClient
 # Initialize the client with your APIVerve API key
 api = PopulationAPIClient("[YOUR_API_KEY]")
 
-query = { "country": "US", "year": 2023 }
+query = {
+    "country": "US",
+    "year": 2023
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "country": "US", "year": 2023 }
+query = {
+    "country": "US",
+    "year": 2023
+}
 ```
 
 ###### Simple Request
@@ -135,7 +141,10 @@ from apiverve_populationdata.apiClient import PopulationAPIClient, PopulationAPI
 
 api = PopulationAPIClient("[YOUR_API_KEY]")
 
-query = { "country": "US", "year": 2023 }
+query = {
+    "country": "US",
+    "year": 2023
+}
 
 try:
     result = api.execute(query)
@@ -156,7 +165,10 @@ from apiverve_populationdata.apiClient import PopulationAPIClient, PopulationAPI
 
 api = PopulationAPIClient("[YOUR_API_KEY]")
 
-query = { "country": "US", "year": 2023 }
+query = {
+    "country": "US",
+    "year": 2023
+}
 
 try:
     result = api.execute(query)
@@ -190,7 +202,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_populationdata.apiClient import PopulationAPIClient, PopulationAPIClientError
 
-query = { "country": "US", "year": 2023 }
+query = {
+    "country": "US",
+    "year": 2023
+}
 
 # Using context manager ensures proper cleanup
 with PopulationAPIClient("[YOUR_API_KEY]") as api:
@@ -216,7 +231,10 @@ from apiverve_populationdata.apiClient import PopulationAPIClient
 # Enable debug mode
 api = PopulationAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "country": "US", "year": 2023 }
+query = {
+    "country": "US",
+    "year": 2023
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -231,8 +249,12 @@ from apiverve_populationdata.apiClient import PopulationAPIClient
 
 api = PopulationAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "country": "US",
+    "year": 2023
+}
+
 try:
-    query = { "country": "US", "year": 2023 }
     result = api.execute(query)
     print(result)
 finally:
