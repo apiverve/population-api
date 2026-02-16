@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/population",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Get comprehensive population data for any country including total population, growth rate, density, urban/rural breakdown, and life expectancy.",
   "main": "index.js",
   "types": "index.d.ts",
