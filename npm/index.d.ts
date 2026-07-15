@@ -4,30 +4,42 @@ declare module '@apiverve/population' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface populationResponse {
     status: string;
     error: string | null;
     data: PopulationDataData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface PopulationDataData {
-      country:             string;
-      countryISO3:         string;
-      countryName:         string;
-      year:                number;
-      population:          number;
-      populationFormatted: string;
-      growthRate:          number;
-      density:             number;
-      densityUnit:         string;
-      urbanPercent:        number;
-      ruralPercent:        number;
-      urbanPopulation:     number;
-      ruralPopulation:     number;
-      lifeExpectancy:      number;
-      lastUpdated:         Date;
+      country:             null | string;
+      countryISO3:         null | string;
+      countryName:         null | string;
+      year:                number | null;
+      population:          number | null;
+      populationFormatted: null | string;
+      growthRate:          number | null;
+      density:             number | null;
+      densityUnit:         null | string;
+      urbanPercent:        number | null;
+      ruralPercent:        number | null;
+      urbanPopulation:     number | null;
+      ruralPopulation:     number | null;
+      lifeExpectancy:      number | null;
+      lastUpdated:         Date | null;
   }
 
   export default class populationWrapper {
