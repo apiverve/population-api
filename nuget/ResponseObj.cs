@@ -25,6 +25,9 @@ namespace APIVerve.API.PopulationData
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -39,39 +42,51 @@ namespace APIVerve.API.PopulationData
         public string CountryName { get; set; }
 
         [JsonProperty("year")]
-        public long Year { get; set; }
+        public long? Year { get; set; }
 
         [JsonProperty("population")]
-        public long Population { get; set; }
+        public long? Population { get; set; }
 
         [JsonProperty("populationFormatted")]
         public string PopulationFormatted { get; set; }
 
         [JsonProperty("growthRate")]
-        public double GrowthRate { get; set; }
+        public double? GrowthRate { get; set; }
 
         [JsonProperty("density")]
-        public double Density { get; set; }
+        public double? Density { get; set; }
 
         [JsonProperty("densityUnit")]
         public string DensityUnit { get; set; }
 
         [JsonProperty("urbanPercent")]
-        public double UrbanPercent { get; set; }
+        public double? UrbanPercent { get; set; }
 
         [JsonProperty("ruralPercent")]
-        public double RuralPercent { get; set; }
+        public double? RuralPercent { get; set; }
 
         [JsonProperty("urbanPopulation")]
-        public long UrbanPopulation { get; set; }
+        public long? UrbanPopulation { get; set; }
 
         [JsonProperty("ruralPopulation")]
-        public long RuralPopulation { get; set; }
+        public long? RuralPopulation { get; set; }
 
         [JsonProperty("lifeExpectancy")]
-        public double LifeExpectancy { get; set; }
+        public double? LifeExpectancy { get; set; }
 
         [JsonProperty("lastUpdated")]
-        public DateTimeOffset LastUpdated { get; set; }
+        public DateTimeOffset? LastUpdated { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
