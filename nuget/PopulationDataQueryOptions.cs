@@ -20,6 +20,6 @@ namespace APIVerve.API.PopulationData
         /// Specific year to retrieve data for (1960-present). Returns latest if not specified.
         /// </summary>
         [JsonProperty("year")]
-        public string Year { get; set; }
+        public int? Year { get; set; }
     }
 }
