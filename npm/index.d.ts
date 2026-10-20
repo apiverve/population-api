@@ -25,21 +25,19 @@ declare module '@apiverve/population' {
 
 
   interface PopulationDataData {
-      country:             null | string;
-      countryISO3:         null | string;
-      countryName:         null | string;
+      country:     null | string;
+      countryName: null | string;
+      year:        number | null;
+      count:       number | null;
+      historical:  Historical[];
+  }
+  
+  interface Historical {
       year:                number | null;
       population:          number | null;
       populationFormatted: null | string;
       growthRate:          number | null;
-      density:             number | null;
-      densityUnit:         null | string;
       urbanPercent:        number | null;
-      ruralPercent:        number | null;
-      urbanPopulation:     number | null;
-      ruralPopulation:     number | null;
-      lifeExpectancy:      number | null;
-      lastUpdated:         Date | null;
   }
 
   export default class populationWrapper {

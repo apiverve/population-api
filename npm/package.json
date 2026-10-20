@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/population",
-  "version": "1.2.0",
-  "description": "Get comprehensive population data for any country including total population, growth rate, density, urban/rural breakdown, and life expectancy.",
+  "version": "1.2.2",
+  "description": "A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "population api", "population by country", "population data", "demographics", "population growth"
+    "population data api", "population api", "world population api", "country population api", "demographic data api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/population-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/population?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/population?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
