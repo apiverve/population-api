@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: Population Data
   description: >-
-    Get comprehensive population data for any country including total
-    population, growth rate, density, urban/rural breakdown, and life
-    expectancy.
+    A country population and demographic data API. Look up any country by ISO
+    code to get its population data, with total population, growth rate,
+    density, urban/rural breakdown, and life expectancy on paid plans.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/population:
     get:
-      summary: Get Population Data
+      summary: Population Data
       description: >-
         Get population data for a specific country. Returns latest data by
         default, or data for a specific year if specified.
@@ -63,21 +63,15 @@ paths:
                 error: null
                 data:
                   country: US
-                  countryISO3: USA
                   countryName: United States
-                  year: 2023
-                  population: 334914895
-                  populationFormatted: 334.91 million
-                  growthRate: 0.53
-                  density: 37.13
-                  densityUnit: per sq km
-                  urbanPercent: 83.08
-                  ruralPercent: 16.92
-                  urbanPopulation: 278284512
-                  ruralPopulation: 56630383
-                  lifeExpectancy: 77.28
-                  lastUpdated: '2024-01-15T04:00:00.000Z'
-                code: 200
+                  year: 2025
+                  count: 1
+                  historical:
+                    - year: 2025
+                      population: 341784857
+                      populationFormatted: 341.78 million
+                      growthRate: 0.52
+                      urbanPercent: 80.19
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
