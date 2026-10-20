@@ -35,12 +35,21 @@ namespace APIVerve.API.PopulationData
         [JsonProperty("country")]
         public string Country { get; set; }
 
-        [JsonProperty("countryISO3")]
-        public string CountryIso3 { get; set; }
-
         [JsonProperty("countryName")]
         public string CountryName { get; set; }
 
+        [JsonProperty("year")]
+        public long? Year { get; set; }
+
+        [JsonProperty("count")]
+        public long? Count { get; set; }
+
+        [JsonProperty("historical")]
+        public Historical[] Historical { get; set; }
+    }
+
+    public partial class Historical
+    {
         [JsonProperty("year")]
         public long? Year { get; set; }
 
@@ -53,29 +62,8 @@ namespace APIVerve.API.PopulationData
         [JsonProperty("growthRate")]
         public double? GrowthRate { get; set; }
 
-        [JsonProperty("density")]
-        public double? Density { get; set; }
-
-        [JsonProperty("densityUnit")]
-        public string DensityUnit { get; set; }
-
         [JsonProperty("urbanPercent")]
         public double? UrbanPercent { get; set; }
-
-        [JsonProperty("ruralPercent")]
-        public double? RuralPercent { get; set; }
-
-        [JsonProperty("urbanPopulation")]
-        public long? UrbanPopulation { get; set; }
-
-        [JsonProperty("ruralPopulation")]
-        public long? RuralPopulation { get; set; }
-
-        [JsonProperty("lifeExpectancy")]
-        public double? LifeExpectancy { get; set; }
-
-        [JsonProperty("lastUpdated")]
-        public DateTimeOffset? LastUpdated { get; set; }
     }
 
     public partial class Premium
