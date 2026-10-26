@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/population",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.",
   "main": "index.js",
   "types": "index.d.ts",
