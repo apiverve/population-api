@@ -1,7 +1,7 @@
 {
     "name": "apiverve/population",
     "description": "A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
