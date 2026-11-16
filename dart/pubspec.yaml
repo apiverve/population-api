@@ -1,0 +1,16 @@
+name: apiverve_population
+description: "A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, world population rank and share, growth rate, density, urban/rural breakdown, and life expectancy on paid plans."
+version: 1.2.6
+homepage: https://apiverve.com/marketplace/population?utm_source=dart&utm_medium=referral&utm_content=homepage
+repository: https://github.com/apiverve/population-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
