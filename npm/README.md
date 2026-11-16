@@ -1,6 +1,6 @@
 # Population Data API
 
-A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.
+A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, world population rank and share, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.
 
 [![npm version](https://img.shields.io/npm/v/@apiverve/population.svg)](https://www.npmjs.com/package/@apiverve/population)
 
