@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "apiverve_population"
-  spec.version       = "1.2.5"
+  spec.version       = "1.2.6"
   spec.authors       = ["APIVerve"]
   spec.email         = ["hello@apiverve.com"]
 
   spec.summary       = "Population Data API - Ruby Client"
-  spec.description   = "A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, growth rate, density, urban/rural breakdown, and life expectancy on paid plans."
+  spec.description   = "A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, world population rank and share, growth rate, density, urban/rural breakdown, and life expectancy on paid plans."
   spec.homepage      = "https://apiverve.com/marketplace/population?utm_source=ruby&utm_medium=referral&utm_content=homepage"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
