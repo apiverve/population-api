@@ -1,6 +1,6 @@
 # [Population Data API](https://apiverve.com/marketplace/population?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.
+A country population and demographic data API. Look up any country by ISO code to get its population data, with total population, world population rank and share, growth rate, density, urban/rural breakdown, and life expectancy on paid plans.
 
 The Population Data API provides a simple, reliable way to integrate population data functionality into your applications. Built for developers who need production-ready population data capabilities without the complexity of building from scratch.
 

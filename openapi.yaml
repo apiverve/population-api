@@ -3,8 +3,9 @@ info:
   title: Population Data
   description: >-
     A country population and demographic data API. Look up any country by ISO
-    code to get its population data, with total population, growth rate,
-    density, urban/rural breakdown, and life expectancy on paid plans.
+    code to get its population data, with total population, world population
+    rank and share, growth rate, density, urban/rural breakdown, and life
+    expectancy on paid plans.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
